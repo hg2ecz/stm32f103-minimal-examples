@@ -14,5 +14,5 @@ Programming & Run:
 * White wire: PA9
 * Green wire: PA10
 
-Jumper "boot0" to 3V3 & push short the RESET button --> you can programming this device (make flash).
+Jumper "boot0" to 3V3 & push short the RESET button --> you can (re)programming this device (make flash).<br>
 Jumpers to GND & push short the RESET button --> run the uploaded code.
