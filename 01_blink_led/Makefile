@@ -18,7 +18,7 @@ unprotect:
 	stm32flash -k $(USBTTL)
 
 flash:
-	stm32flash -w progi.bin $(USBTTL)
+	stm32flash -w $(TARGET).bin $(USBTTL)
 
 clean:
 	rm -f $(OBJS) $(TARGET).elf $(TARGET).bin
