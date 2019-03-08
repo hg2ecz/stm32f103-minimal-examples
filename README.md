@@ -20,3 +20,8 @@ Programming & Run:
 
 Jumper "boot0" to 3V3 & push short the RESET button --> you can (re)programming this device (make flash).<br>
 Jumpers to GND & push short the RESET button --> run the uploaded code.
+
+If you got the following error message:
+Got NACK from device on command 0x43
+Can't initiate chip mass erase!
+The following command will help: [b]make unprotect[/b], because the new blue pill is currently code protected.
