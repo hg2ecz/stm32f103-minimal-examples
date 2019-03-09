@@ -8,7 +8,7 @@
 #define PERIPH_BASE     0x40000000
  
 /* work out end of RAM address as initial stack pointer */
-#define SRAM_SIZE       20*1024     // STM32F103RB has 20 kbyte of RAM
+#define SRAM_SIZE       20*1024     // STM32F103C8 has 20 kbyte of RAM
 #define SRAM_END        (SRAM_BASE + SRAM_SIZE)
  
 /* LED connected to PIN 13 of GPIOC */
@@ -19,7 +19,7 @@
 #define RCC_BASE        (PERIPH_BASE + 0x21000)
 #define RCC_APB2ENR     (*(volatile unsigned long*)(RCC_BASE + 0x18))
  
-/* GPIOA peripheral addresses */
+/* GPIOC peripheral addresses */
 #define GPIOC_BASE      (PERIPH_BASE + 0x11000)
 #define GPIOC_CRL       (*(volatile unsigned long*)(GPIOC_BASE + 0x00))
 #define GPIOC_CRH       (*(volatile unsigned long*)(GPIOC_BASE + 0x04))
