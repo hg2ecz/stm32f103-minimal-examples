@@ -8,10 +8,10 @@
 #define PERIPH_BASE     0x40000000
  
 /* work out end of RAM address as initial stack pointer */
-#define SRAM_SIZE       20*1024     // STM32F103RB has 20 Kbye of RAM
+#define SRAM_SIZE       20*1024     // STM32F103RB has 20 kbyte of RAM
 #define SRAM_END        (SRAM_BASE + SRAM_SIZE)
  
-/* LED connected to PIN 8 of GPIOA */
+/* LED connected to PIN 13 of GPIOC */
 #define LED_PIN         13
 #define OUTPUT_MODE     (0x10|0x03) // output mode: push-pull + 50MHz
  
@@ -44,7 +44,7 @@ int main() {
 
     /* set LED pin output mode */
     #if LED_PIN <= 7
-        GPIOA_CRL |= OUTPUT_MODE << ((LED_PIN) << 2); // if pins 0 to 7
+        GPIOC_CRL |= OUTPUT_MODE << ((LED_PIN) << 2); // if pins 0 to 7
     #else
         GPIOC_CRH |= OUTPUT_MODE << ((LED_PIN-8) << 2); // if pins 8 to 15
     #endif
