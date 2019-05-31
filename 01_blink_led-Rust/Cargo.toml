@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2018"
 
 [profile.release]
+# optimize for size ('s')
+# or optimize even more ('z')
+opt-level = 'z'
 lto = true
 
 [dependencies]
