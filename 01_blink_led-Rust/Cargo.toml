@@ -1,0 +1,14 @@
+[package]
+name = "stm32_blink"
+version = "0.1.0"
+edition = "2018"
+
+[profile.release]
+lto = true
+
+[dependencies]
+stm32f1 = {version = "0.6", features = ["stm32f103", "rt"]}
+cortex-m-rt = "0.6"
+cortex-m = "0.5"
+# provies a panic-handler, required when not using stdlib
+panic-halt = "0.2"
