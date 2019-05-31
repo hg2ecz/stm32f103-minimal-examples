@@ -2,10 +2,7 @@
 #![no_std]
 #![no_main]
 
-extern crate stm32f1;
-extern crate panic_halt;
-extern crate cortex_m_rt;
-
+extern crate panic_halt; // need this row
 use cortex_m_rt::entry;
 use stm32f1::stm32f103;
 
