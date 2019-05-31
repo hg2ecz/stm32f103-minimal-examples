@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# rustup target add thumbv7m-none-eabi
+# sudo apt install binutils-arm-none-eabi
+
 BINFILE=stm32_blink.bin
 
 cargo build --release
