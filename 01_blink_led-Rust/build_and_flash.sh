@@ -1,7 +1,13 @@
 #!/bin/sh
 
-# rustup target add thumbv7m-none-eabi
-# sudo apt install binutils-arm-none-eabi
+# Required packages:
+# ------------------
+# Standard Rust install (stable):
+#     curl https://sh.rustup.rs -sSf | sh
+# ARM target:
+#     rustup target add thumbv7m-none-eabi
+# Debian/Ubuntu: objcopy & flash tool for USB-TTL:
+#     sudo apt install binutils-arm-none-eabi stm32flash
 
 BINFILE=stm32_blink.bin
 
